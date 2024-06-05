@@ -1,0 +1,29 @@
+{
+  "name": "uf1846_manami_prova_practica",
+  "version": "1.0.0",
+  "description": "Cief prueba de practica NODE",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manami-n/Cief_NODE_Practica.git"
+  },
+  "keywords": [
+    "NODE",
+    "Express",
+    "ejs"
+  ],
+  "author": "Manami Naito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manami-n/Cief_NODE_Practica/issues"
+  },
+  "homepage": "https://github.com/manami-n/Cief_NODE_Practica#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  }
+}

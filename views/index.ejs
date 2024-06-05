@@ -1,0 +1,24 @@
+<%- include("templates/header.ejs") %>
+<main>
+    <h2>Nuestro equipo</h2>
+    <section>
+      <% team.forEach((i) => { %>
+      <div class="card <%= i.departamento%>" onclick="enlace('<%= i.apellido %>')" style="cursor:pointer">
+        <img src="/img_customers/<%= i.nombre %>.<%= i.apellido %>.png" alt="Imagen de<%= i.nombre %>">
+        <h3><%= i.nombre %> <%= i.apellido %></h3>
+        <p><%= i.email %></p>
+        <hr>
+        <p><%= i.departamento %></p>
+      </div>
+      <% }); %>
+    </section>
+    <script>
+      // function for clicking card
+      function enlace(apellido) {
+        window.location.href = `/team/${apellido}`; 
+      }
+    </script>
+  
+</main>
+</body>
+</html>
